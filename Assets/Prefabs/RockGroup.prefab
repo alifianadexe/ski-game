@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3533703290642192267}
   - component: {fileID: 2940314313527039057}
   - component: {fileID: 4734311597916247323}
-  - component: {fileID: 587001181178749622}
   m_Layer: 0
   m_Name: pCube1
   m_TagString: Obstacle
@@ -57,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &4734311597916247323
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -95,18 +96,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4068373912626513877, guid: dc98d5f294c1a5f48a8788984da996bc, type: 3}
---- !u!114 &587001181178749622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781694759040481379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1ec6b8ab27d27a48ac2e1f3f92efae1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1135601396024123489
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 326977025837693659}
+  - component: {fileID: 8268783587669293100}
   m_Layer: 0
   m_Name: RockGroup
   m_TagString: Untagged
@@ -140,6 +130,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -5.649, z: 0}
+--- !u!65 &8268783587669293100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135601396024123489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1541916583475345216
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +155,6 @@ GameObject:
   - component: {fileID: 2604817385227772705}
   - component: {fileID: 1387954968968950177}
   - component: {fileID: 318250846262743917}
-  - component: {fileID: 532112188541092177}
   m_Layer: 0
   m_Name: pCube3
   m_TagString: Obstacle
@@ -197,6 +199,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -221,6 +224,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &318250846262743917
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -235,18 +239,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3369316746193770658, guid: dc98d5f294c1a5f48a8788984da996bc, type: 3}
---- !u!114 &532112188541092177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541916583475345216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1ec6b8ab27d27a48ac2e1f3f92efae1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8663453154816363231
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +251,6 @@ GameObject:
   - component: {fileID: 665352491102165231}
   - component: {fileID: 3146664760710241211}
   - component: {fileID: 1807714061179826889}
-  - component: {fileID: 8768718142054597219}
   m_Layer: 0
   m_Name: pCube4
   m_TagString: Obstacle
@@ -304,6 +295,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -328,6 +320,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &1807714061179826889
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -342,15 +335,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3861478300804232965, guid: dc98d5f294c1a5f48a8788984da996bc, type: 3}
---- !u!114 &8768718142054597219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8663453154816363231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1ec6b8ab27d27a48ac2e1f3f92efae1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
