@@ -22,7 +22,7 @@ public class SnowmanThrow : MonoBehaviour
        
        float distanceToTarget = Vector3.Distance(target.transform.position, transform.position);
 
-        if (distanceToTarget < throwDistance&&justThown==false)
+        if (distanceToTarget < throwDistance && justThown==false)
         {
             justThown = true;
             GameObject tempSnowBall = Instantiate(snowBall,transform.position,transform.rotation);
@@ -32,7 +32,7 @@ public class SnowmanThrow : MonoBehaviour
             //Add a small throw angle
             targetDirection += new Vector3(0, 0.33f, 0);
             tempRb.AddForce(targetDirection * throwSpeed);
-            Invoke("ThrowOver", 0.1f);
+            Invoke("ThrowOver", 0.9f);
         }
 
     }

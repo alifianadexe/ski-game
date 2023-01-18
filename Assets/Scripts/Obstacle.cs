@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            HitPlayer(collision.gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void HitPlayer(GameObject player)
     {
-        
+        PlayerEvents.PlayerHit();
     }
 }
