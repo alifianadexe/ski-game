@@ -4832,6 +4832,7 @@ GameObject:
   - component: {fileID: 1623043803}
   - component: {fileID: 1623043805}
   - component: {fileID: 1623043804}
+  - component: {fileID: 1623043806}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4878,6 +4879,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3caa83d39f371bc47b4cd620273a692e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1623043806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623043802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eb41c360ed21d478dfa90fea10c5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raceOverUI: {fileID: 6564981168059666986}
+  overLayScreen: {fileID: 6564981168059666985}
+  nextScendIndex: 2
 --- !u!1 &1688951602
 GameObject:
   m_ObjectHideFlags: 3
@@ -24146,11 +24162,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1623043805}
+    - target: {fileID: 6564981166389357953, guid: 49ee210ac0510844d8da858708681a45,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564981166389357953, guid: 49ee210ac0510844d8da858708681a45,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameEvents, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6564981166553636942, guid: 49ee210ac0510844d8da858708681a45,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1623043805}
+    - target: {fileID: 6564981166553636942, guid: 49ee210ac0510844d8da858708681a45,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextRace
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564981166553636942, guid: 49ee210ac0510844d8da858708681a45,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameEvents, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6564981167228359830, guid: 49ee210ac0510844d8da858708681a45,
         type: 3}
@@ -24160,7 +24196,7 @@ PrefabInstance:
     - target: {fileID: 6564981167228359830, guid: 49ee210ac0510844d8da858708681a45,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6564981167228359914, guid: 49ee210ac0510844d8da858708681a45,
         type: 3}
@@ -24271,6 +24307,28 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1623043805}
+    - target: {fileID: 6564981168225664803, guid: 49ee210ac0510844d8da858708681a45,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RetryRace
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564981168225664803, guid: 49ee210ac0510844d8da858708681a45,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameEvents, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49ee210ac0510844d8da858708681a45, type: 3}
+--- !u!1 &6564981168059666985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6564981167525259486, guid: 49ee210ac0510844d8da858708681a45,
+    type: 3}
+  m_PrefabInstance: {fileID: 6564981168059666984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6564981168059666986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6564981166728425805, guid: 49ee210ac0510844d8da858708681a45,
+    type: 3}
+  m_PrefabInstance: {fileID: 6564981168059666984}
+  m_PrefabAsset: {fileID: 0}
