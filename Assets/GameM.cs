@@ -30,7 +30,7 @@ public class GameM : MonoBehaviour
         GameEvents.OnNextLevel -= NextLevel;
 
     }
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +42,9 @@ public class GameM : MonoBehaviour
     {
         //turn on the game object
         raceOverUI.SetActive(true);
+
+        GameData.Instance.completedRaces++;
+        print($"Completed Races : {GameData.Instance.completedRaces}");
     }
 
     private void RestartRace()
